@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>HES_.</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- FONT AWESOME -->
+    <link href="css/fontawesome-free-5.2.0-web/css/all.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script src="js/typed.js"></script>
+	<script>
+	$(function(){
+
+	// --------Typed Js---------- //
+
+ 	 var typed = $(".typed");
+
+	  $(function(){
+  	      typed.typed({
+  	          strings: ["KANG", "HEASEUNG" /*"Publisher", "Designer", "Retoucher"*/],
+   	          typeSpeed: 150,
+   	          loop: true,
+   	      });
+      });
+
+	// --------Menu Js---------- //
+	
+  
+     $('#menubtn').click(function(){
+		 $('#menu').fadeToggle( 'linear' );
+	 });
+	 $('#closebtn').click(function(){
+		 $('#menu').hide();
+	 });
+    });
+	</script>
+</head>
+<body>
+
+	<div id="index" class="container-fluid">
+	    <div id="index_inner">
+			<h1 id="logo"><a href="#">logo</a></h1>
+		    <a id="menubtn" href="#">
+			    <img class="menubtn" src="img/menubtn.png" alt="menubtn" />
+			</a>
+			<p id="menubtn_arrow"><i class="fas fa-sort-up"></i><br>MENU</p>
+
+            <div id="index_type">
+		         <h1>HES_.<span class="typed"></span></h1>
+		    	 <p>web publisher . designer . retoucher</p>
+		    </div>
+
+			<p id="copy">&copy; copyright HES</p>
+		</div>
+
+	</div>
+
+	<div id="menu" class="container-fluid">
+
+		<div id="menu_inner">
+			<a id="closebtn" href="#"><img src="img/closebtn.png" alt="닫기버튼" /></a>
+			<ul>
+				<li>
+				    <p class="nav-link-dot">.</p>
+					<a href="portfolio_web.html">WEB PORTFOLIO</a>
+				</li>
+				<li>
+				    <p class="nav-link-dot">.</p>
+				    <a href="portfolio_design.html">DESIGN PORTFOLIO</a>
+				</li>
+				<li>
+				    <p class="nav-link-dot">.</p>
+				    <a href="portfolio_photo.html">PHOTO PORTFOLIO</a>
+				</li>
+				<li>
+				    <p class="nav-link-dot">.</p>
+				    <a href="about.html">ABOUT</a>
+				</li>
+			    <li>
+				    <p class="nav-link-dot">.</p>
+				    <a href="contact.html">CONTACT</a>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+
+
+</body>
+</html>
